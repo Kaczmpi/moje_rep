@@ -1,0 +1,6 @@
+Vector_main: Vector_main.o Vector.o
+	g++ Vector_main.o Vector.o -o Vector_main
+Vector.o: Vector.cpp Vector.hpp
+	g++ -c Vector.cpp
+Vector_main.o: Vector_main.cpp
+	g++ -c Vector_main.cpp
